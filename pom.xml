@@ -17,18 +17,25 @@
        
     <build>
         <finalName>cq_rp</finalName>
-             
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.1.1</version>
-                <configuration>
-                    <!--指定web.xml等文件所在位置 -->
-                    <webXml>src\main\webapp\WEB-INF\web.xml</webXml>
+<!--                <configuration>-->
+<!--                    &lt;!&ndash;指定web.xml等文件所在位置 &ndash;&gt;-->
+<!--                    <webXml>src\main\webapp\WEB-INF\web.xml</webXml>-->
 
-                    <!--指定jsp等文件所在位置 -->
-                    <warSourceDirectory>src\main\webapp</warSourceDirectory>
+<!--                    &lt;!&ndash;指定jsp等文件所在位置 &ndash;&gt;-->
+<!--                    <warSourceDirectory>src\main\webapp</warSourceDirectory>-->
+<!--                </configuration>-->
+
+                <configuration>
+                    <!-- http://maven.apache.org/plugins/maven-war-plugin/ -->
+
+                    <packagingExcludes>WEB-INF/web.xml</packagingExcludes>
+
                 </configuration>
             </plugin>
         </plugins>
