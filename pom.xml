@@ -6,6 +6,11 @@
     <!--指定编译之后会生成war文件，不改就会默认是jar文件 -->
     <packaging>war</packaging>     
          
+    <properties>
+        <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+         
     <groupId>com.crm</groupId>
     <artifactId>cq_rp</artifactId>
     <version>1.0-SNAPSHOT</version>
